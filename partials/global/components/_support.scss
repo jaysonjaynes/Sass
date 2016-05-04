@@ -1,0 +1,139 @@
+#quicktabs-container-support_ticket_tabs .container-inline,
+#quicktabs-container-support_ticket_tabs #edit-subscribe--2,
+#quicktabs-container-support_ticket_tabs #edit-comment-body-und-0-format--3 {
+    display: none;
+    border:1px solid red;
+}
+.node-support_ticket-form {
+    #edit-title {
+        width: 100%;
+        height: 30px;
+    }
+    legend {
+        display: none;
+    }
+    .container-inline {
+        label, div {
+            display: block;
+        }
+        div {
+            line-height: 1;
+        }
+        label {
+            margin-bottom: 5px;
+        }
+        .description {
+            br {
+                height: 5px;
+            }
+        }
+    }
+    #edit-support-ticket-upload, #edit-support-ticket-upload--2 {
+        border: 1px solid #ccc;
+        padding: 15px;
+        margin: 15px 0;
+    }
+}
+.node-type-support-ticket, .node-type-forum {
+    #edit-support-ticket-upload, #edit-support-ticket-upload--2, #edit-field-forum-file-upload {
+        border: 1px solid #ccc;
+        padding: 15px;
+        margin: 15px 0;
+    }
+}
+/*.node-support_ticket-form .form-item-state {
+    width: 100%;
+    margin-left: 20px;
+    float: left;
+}
+.node-support_ticket-form .form-item-priority {
+    width: 100%;
+    margin-left: 20px;
+    float: left;
+}
+.node-support_ticket-form .form-item-client{
+    width: 100%;
+    margin-left: 20px;
+    float: left;
+}
+.node-support_ticket-form .form-item-state {
+    width: 100%;
+    margin-left: 20px;
+    float: left;
+}
+.node-support_ticket-form .form-item-project {
+    width: 100%;
+    margin-left: 20px;
+    float: left;
+}
+.node-support_ticket-form .form-item-assigned {
+    width: 100%;
+    margin-left: 20px;
+    float: left;
+}
+.node-support_ticket-form .form-item {
+    margin-bottom: 5px;
+}
+.node-support_ticket-form .form-item label {
+    font-weight: normal;
+    width: 100%;
+    float: left;
+}
+.node-support_ticket-form .form-radios label {
+    width: 50%;
+    float: left;
+}
+.node-support_ticket-form .field-name-support-ticket-upload legend{
+    font-weight: bold;
+}
+.node-support_ticket-form .field-name-support-ticket-upload .fieldset-wrapper {
+     margin-left: 20px;
+     float: left;
+}*/
+.node-support_ticket-form #edit-notifications,
+.page-node-add-support-ticket #edit-notifications--2,
+.node-type-support-ticket .comment-form #edit-notifications--2,
+.node-type-support-ticket .comment-form #edit-notifications,
+.context-support-ticket .comment-form #edit-notifications,
+.node-support_ticket-form #edit-subscribe,
+.node-type-support-ticket #edit-support-ticket-upload-und legend,
+.node-type-support-ticket #edit-comment-body-und-0-format,
+.context-support-ticket #edit-support,
+.context-support-ticket #edit-support--2,
+#support-ticket-node-form #edit-body-und-0-format,
+.node-type-support-ticket #edit-subscribe,
+.node-type-support-ticket #edit-subscribe--2,
+.support-project, .support-assigned, .support-client, .support-state, .support-priority {
+     display:none;
+}
+.ticket-assignment {
+    float: right;
+    background: none;
+    border: 2px solid $tertiary-color;
+    -webkit-border-radius : 8px;
+    -moz-border-radius : 8px;
+    border-radius : 8px;
+    margin: 0 0 20px 20px;
+    ul {
+        list-style: none;
+        padding: 10px;
+        padding-bottom: 0;
+        margin-left: 0;
+        margin-bottom: 0;
+    }
+}
+.new-ticket {
+    a {
+        background: $highlight-color-1;
+        display: block;
+        border-radius: $border-radius;
+        border: 1px solid $border-color;
+        padding: 10px;
+        font-size: 15px;
+        text-decoration: none;
+        &:hover {
+            background: $secondary-color;
+            color: #fff;
+        }
+    }
+}

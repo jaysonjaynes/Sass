@@ -1,0 +1,76 @@
+.domain-careacttarget-org {
+    #page.fixed-header {
+       #header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            height: 75px;
+            z-index: 1000 !important;
+            box-shadow: 0 2px 2px #aaa;
+            #site-name {
+                a {
+                    background: url("../logo-mobile.png") no-repeat scroll left top transparent;
+                    background-size: 150px;
+                    width: 150px;
+                    height: 80px;
+                    display:block;
+                }
+            }
+            #site-slogan {
+                display: none;
+            }            
+        }
+        #main {
+                padding-top: 120px;
+        }
+    }
+}
+
+@include breakpoint($break-ml) {
+    .domain-careacttarget-org {
+        #page.fixed-header {
+            #header {
+                position: fixed;
+                top: 0;
+                width: 100%;
+                height: 88px;
+                z-index: 1000 !important;
+                #site-name {
+                    a {
+                        background: transparent url("../logo.png") no-repeat scroll left top / 200px auto;
+                        height: 50px;
+                        width: 200px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include breakpoint($break-medium) {
+    .domain-careacttarget-org {
+        #page.fixed-header {
+           #header {
+                height: 55px;
+           }
+        }
+    }
+}
+@include breakpoint($break-mobile-only) {
+    .domain-careacttarget-org {
+        #page.fixed-header {
+           #header {
+                #block-apachesolr-panels-search-form, #top-menu {
+                    margin-top: -10px;
+                }
+            }
+        }
+    }
+}
+
+/* fixes the jump link with the new static headers */
+a[name] {
+    padding-top: 130px;
+    margin-top:-130px;
+    display: inline-block;
+}

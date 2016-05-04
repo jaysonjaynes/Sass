@@ -1,0 +1,143 @@
+.pane-topic-areas-blocks-panel-pane-10 {
+    margin-bottom: 25px;
+    select {
+        width: 100%;
+        height: 2em;
+        font-size: 16px;
+        font-family : Helvetica, Arial, sans-serif;
+        border-radius: 3px;
+        color: $body-text !important;
+        padding: 0 20px 0 10px;
+    }
+}
+.resource-filter {
+    padding: 15px;
+    border-top: 3px solid $tertiary-color;
+    //border-radius: 5px;
+    margin-bottom: 15px;
+    border-bottom: 0;
+    h2 {
+        font-size: 18px;
+        color: #0071BC;
+    }
+    #views-exposed-form-taxonomy-term-panel-pane-21, #views-exposed-form-taxonomy-term-panel-pane-23 {
+        .views-exposed-widgets {
+            label {
+                color: #0071BC;
+                font-weight: normal;
+                font-size: 16px;
+            }
+             select {
+                width: 100%;
+                height: 2em;
+                font-size: 16px;
+                border-radius: 3px;
+                color: $body-text !important;
+                font-family : Helvetica, Arial, sans-serif;
+                border: 1px solid $tertiary-color;
+                padding: 0 20px 0 10px;
+            }
+        }
+    }
+}
+.resource-types {
+    h4 {
+        font-style: normal;
+    }
+    ul {
+        margin-bottom: 35px;
+        border-top: 1px solid #ccc;
+        list-style: none;
+        li {
+            //border-bottom: 1px solid #ccc;
+            padding: 18px 15px;
+            margin-bottom: 0;
+            &.views-row-even {
+                background: $table-row-color;
+            }
+            ul {
+                border-top: none;
+                margin-bottom: 0;
+                li {
+                    border-bottom: none;
+                    padding: 0;
+                    &.views-row-even {
+                        background: transparent;
+                    }
+                }
+            }
+            p {
+                margin-bottom: 0;
+            }
+            .parent-child {
+                margin: 10px auto 0;
+            }
+            .views-field-body {
+                margin-top: 10px;
+            }
+        }
+    }
+}
+.Guidelines, .Manuales {
+    color: #0071BC;
+    &:before {
+        content: "\f02e";
+    }
+}
+.Webinars, .Seminarios {
+    color: #0071BC;
+    &:before {
+        content: "\f02d";
+    }
+}
+.Tools, .Herramientas {
+    color: #0071BC;
+    &:before {
+        content: "\f085";
+    }
+}
+.Reports, .Informes  {
+    color: #0071BC;
+    &:before {
+        content: "\f040";
+    }
+}
+.Websites, .Sitios  {
+    color: #0071BC;
+    &:before {
+        content: "\f0ac";
+    }
+}
+// Spanish widgets
+#AIWidget_v {
+    width: 100% !important;
+    height: 140px !important;
+    div:first-child {
+        display: none;
+    }
+    .AInews_v {
+        border: none !important;
+        height: 140px !important;
+        ul {
+            list-style: none !important;
+            li {
+                list-style: none !important;
+                text-indent: 0 !important;
+                a {
+                    font-family: $main-font !important;
+                    font-size: $font-size !important;
+                    font-weight: normal !important;
+                    color: $body-link !important;
+                    text-decoration: underline !important;
+                    &:hover {
+                        color: $body-link-hover !important;
+                        text-decoration: none !important;
+                    }
+                }
+            }
+        }
+    }
+    #AIbottom_v {
+        display: none;
+    }
+}

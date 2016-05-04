@@ -1,0 +1,48 @@
+/* This file will hold the main styles for your website. */
+
+
+
+.image-right, .image-left {
+    float: right;
+    margin: 0 0 15px 10px;
+    img {
+        border: 1px solid #ccc;
+    }
+}
+.image-left {
+    float: left;
+    margin: 0 10px 15px 0;
+}
+
+sup, sub {
+    font-size: 12px;
+    line-height: 0;
+}
+sup {
+    vertical-align:super;
+}
+sub {
+    vertical-align: sub;
+}
+
+.byline {
+  font-size: 13px;
+  color: $body-font-color-light;
+}
+.no-bullets {
+    ul {
+        list-style: none !important;
+        margin-left: 0;
+        padding-left: 0;
+    }
+}
+ul.no-bullets {
+    list-style: none !important;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+.tips, .description {
+    font-size: $font-size;
+    color: $body-font-color;
+}

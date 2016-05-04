@@ -1,0 +1,148 @@
+.flexslider {
+    border: none;
+    border-radius: 0;
+    margin: 0;
+    .flex-direction-nav {
+        .flex-nav-prev, .flex-nav-next {
+            margin-bottom: 0;
+            a {
+                display: none !important;
+            }
+        }
+    }
+    .flex-caption {
+            background: #111;
+            opacity: 0.85;
+            margin-top: 0px;
+            min-height: 180px;
+            font-family: "adelle", Georgia, serif;
+            font-size: 1.4em;
+            font-weight: 300;
+            vertical-align: text-top;
+        a {
+            padding: 20px;
+            display: block;
+            color: #fff;
+            text-decoration: none;
+            min-height: 180px;
+            p {
+                margin-bottom: 0;
+                .highlight {
+                    color: $secondary-color;
+                    font-size: 1.5em;
+                }
+                i.fa {
+                    color: $hightlight-color-5;
+                    display: inline-block;
+                    padding: 5px;
+                    font-size: 1.1em;
+                }
+            }
+        }
+    }
+}
+@include breakpoint($break-medium) {
+        .flexslider {
+        border: none;
+        border-radius: 0;
+        margin: 0;
+        .flex-direction-nav {
+            .flex-nav-prev, .flex-nav-next {
+                margin-bottom: 0;
+                a {
+                    right: 0 !important;
+                    margin-right: 20px;
+                    opacity: 1 !important;
+                    display: block !important;
+                    top: auto;
+                    bottom: 70px;
+                    padding-top: 10px;
+                    &::before {
+                        color: $hightlight-color-5;
+                    }
+                }
+            }
+            .flex-nav-prev a {
+                left: 0 !important;
+                margin-left: 20px;
+            }
+        }
+        .flex-caption {
+                margin-top: -75px;
+                min-height: 170px;
+                font-size: 1.6em;
+
+            a {
+                padding: 30px 80px 20px;
+                min-height: 170px;
+                p {
+                    margin-bottom: 0;
+                    .highlight {
+                        font-size: 1.7em;
+                    }
+                    i.fa {
+                        font-size: 1.2em;
+                    }
+                }
+            }
+        }
+    }
+}
+@include breakpoint($break-large) {
+    .flexslider {
+        border: none;
+        border-radius: 0;
+        margin: 0;
+        .flex-direction-nav {
+            .flex-nav-prev, .flex-nav-next {
+                margin-bottom: 0;
+                a {
+                    right: 0 !important;
+                    margin-right: 20px;
+                    opacity: 1 !important;
+                    display: block !important;
+                    top: auto;
+                    bottom: 50px;
+                    padding-top: 10px;
+                    &::before {
+                        color: $hightlight-color-5;
+                    }
+                }
+            }
+            .flex-nav-prev a {
+                left: 0 !important;
+                margin-left: 20px;
+            }
+        }
+        .flex-caption {
+                background: #111;
+                opacity: 0.85;
+                margin-top: -125px;
+                min-height: 125px;
+                font-family: "adelle", Georgia, serif;
+                font-size: 1.6em;
+                font-weight: 300;
+                vertical-align: text-top;
+            a {
+                padding: 30px 80px 20px;
+                display: block;
+                color: #fff;
+                text-decoration: none;
+                min-height: 125px;
+                p {
+                    margin-bottom: 0;
+                    .highlight {
+                        color: $secondary-color;
+                        font-size: 1.7em;
+                    }
+                    i.fa {
+                        color: $hightlight-color-5;
+                        display: inline-block;
+                        padding: 5px;
+                        font-size: 1.2em;
+                    }
+                }
+            }
+        }
+    }
+}

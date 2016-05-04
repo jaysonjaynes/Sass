@@ -1,0 +1,105 @@
+#block-apachesolr-panels-search-form, .pane-apachesolr-form {
+    float: right;
+    margin-right: 20px;
+    margin-bottom: 30px;
+    margin-top: 24px;
+    /*form {
+        width: 100%;
+        float: right;
+    }*/
+    .form-item-apachesolr-panels-search-form {
+        margin: 0;
+        float: left;
+        width: 350px;
+       input.form-text {
+            width: 350px;
+            height: 30px;
+            padding-left: 10px;
+            padding-right: 10px;
+            color: #666;
+       }
+    }
+    .form-actions {
+        float:left;
+        input, input#edit-submit--2, input#edit-submit--3 {
+                background-color: $primary-color;
+                color: #fff;
+                height: 30px;
+                padding: 5px 20px;
+                border-radius: 0 5px 5px 0;
+                &:hover {
+                    background-color: $highlight-color;
+                }
+        }
+    }
+}
+.pane-apachesolr-form {
+    float:none;
+}
+.pane-apachesolr-result {
+    clear: both;
+    padding-top: 25px;
+    float:left;
+    width: 100%;
+    .panel-display {
+        margin-bottom: 15px;
+        border-bottom: 1px dashed $border-color;
+        padding-bottom: 10px;
+        h2 {
+            font-size: 16px;
+            color: $secondary-color-2;
+            a {
+                color: $primary-color;
+                &:hover {
+                    color: $secondary-color-2;
+                }
+            }
+        }
+        .org-subname, .search-result-blog-author {
+            margin-bottom: 5px;
+        }
+        .search-result-blog-author {
+            color: $body-font-color-light;
+            font-size: 13px;
+        }
+        .field-name-body {
+            margin-bottom: 10px;
+        }
+        .user-roles {
+            margin-bottom: 0;
+            float:left;
+            .item-lines ul {
+                padding-top: 0;
+                margin-top: 0;
+                margin-bottom: 0;
+                float: left;
+                li {
+                    border-top: none;
+                    padding-top: 0;
+                    &:last-child {
+                        border-bottom: none;
+                    }
+                    /*a:after {
+                        content: ' ';
+                        clear: right;
+                        display: block;
+                    }*/
+                }
+            }
+        }
+        .search-result-footer {
+            margin-bottom: 0;
+            color: $body-font-color-light;
+            font-style: italic;
+        }
+        .field-name-field-event-type, .field-name-field-event-date-time {
+            display: inline-block;
+            margin-right: 5px;
+        }
+    }
+}
+ul#facetapi-facet-apachesolrlocalhost-server-block-im-field-resource-topic, ul#facetapi-facet-apachesolrlocalhost-server-block-bundle {
+    padding-left: 0;
+    margin-left: 0;
+    list-style: none;
+}

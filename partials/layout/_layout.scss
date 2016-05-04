@@ -1,0 +1,404 @@
+////////////////////////
+//
+// Breakpoint variables.
+//
+// Breakpoint allows us to embed media queries directly into each rule that
+// needs it, rather than forcing a developer to place rules for a single
+// component in multiple places depending on the media query they want to
+// affect.
+//
+// @see https://github.com/Team-Sass/breakpoint/wiki
+//
+// Listed here are named breakpoints. They can vary in complexity, allowing you to
+// get rid of the cognitive load behind typing and remembering media queries.
+//
+// @see https://github.com/Team-Sass/breakpoint/wiki/Respond-To
+//
+////////////////////////
+
+$breakpoint-no-query-fallbacks: true;
+$breakpoint-to-ems: true;
+
+//$breakpoints: add-breakpoint('sample breakpoint', 800px);
+$mobile: 500px;
+$break-medium: 500px 800px;
+$break-large: 800px;
+$break-ml: 501px;
+$break-mobile-only: 1px 500px;
+$break-mobile-medium: 1px 870px;
+$break-mobile-medium-nav: 1px 800px;
+$gutter: 1/12;
+
+//Layouts
+#main, .header-wrapper, .top-region-container, #footer, #main-prefix {
+    max-width: 1200px;
+    margin: 0 auto !important;
+    //background: #fff;
+}
+.threecol, .twocol-right, .twocol-left {
+    .sidebar-second, .sidebar-first, .fourcol-t1 {
+        margin-top: 25px;
+    }
+}
+.twocol-right {
+    @include breakpoint($break-medium) {
+        @include add-grid(9 3);
+        .content-main {
+            @include grid-span(1, 1);
+        }
+        .sidebar-second {
+            @include grid-span(1, 2);
+            margin-top: 0;
+        }
+    }
+}
+.twocol-left {
+    @include breakpoint($break-medium) {
+        @include add-grid(3 9);
+        .content-main {
+            @include grid-span(1, 2);
+        }
+        .sidebar-first {
+            @include grid-span(1, 1);
+            margin-top: 0;
+        }
+    }
+}
+.threecol {
+    @include breakpoint($break-medium) {
+        @include add-grid(3 9);
+        .content-main {
+            @include grid-span(1, 2);
+        }
+        .sidebar-first {
+            @include grid-span(1, 1);
+            margin-top: 0;
+        }
+        .sidebar-second {
+            @include grid-span(1, 2);
+        }
+    }
+    @include breakpoint($break-large) {
+        @include add-grid(3 6 3);
+        .content-main {
+            @include grid-span(1, 2);
+        }
+        .sidebar-first {
+            @include grid-span(1, 1);
+            margin-top: 0;
+        }
+        .sidebar-second {
+            @include grid-span(1, 3);
+            margin-top: 0;
+        }
+    }
+}
+.fourcol-t1 {
+     @include breakpoint($break-medium) {
+        @include add-grid(3 3 3);
+        .main-column-one {
+            @include grid-span(1, 1);
+        }
+        .main-column-two {
+            @include grid-span(1, 2);
+        }
+        .main-column-three {
+            @include grid-span(1, 3);
+        }
+        .sidebar-first {
+            @include grid-span(3, 1);
+            margin-top: 0;
+            clear:both;
+        }
+    }
+    @include breakpoint($break-large) {
+        @include add-grid(3 3 3 3);
+        .main-column-one {
+            @include grid-span(1, 2);
+        }
+        .main-column-two {
+            @include grid-span(1, 3);
+        }
+        .main-column-three {
+            @include grid-span(1, 4);
+        }
+        .sidebar-first {
+            @include grid-span(1, 1);
+            margin-top: 0;
+        }
+    }
+}
+.twocol-grantees-map {
+    @include breakpoint($break-medium) {
+        @include add-grid(3 9);
+        //$gutter: 0;
+        .content-main {
+            @include grid-span(1, 2);
+        }
+        .sidebar-first {
+            @include grid-span(1, 1);
+            margin-top: 0;
+        }
+    }
+}
+
+
+//Specific styles
+#page {
+   #block-apachesolr-panels-search-form, #site-slogan, #block-system-user-menu {
+      display:none;
+   }
+   #header #site-name a {
+      background: url("../logo-mobile.png") no-repeat scroll left top transparent;
+      background-size: 150px;
+      width: 150px;
+      height: 80px;
+      display:block;
+   }
+   .mag-search, .nav-toggle {
+      display: inline-block;
+      float:right;
+      margin: 10px;
+      background: url("../images/menu-icon.png") no-repeat top center black;
+      background-size: 35px;
+      width: 35px;
+      height: 35px;
+      padding-top: 25px;
+      text-indent: -9999px;
+      &.active {
+         background-color: $tertiary-color;
+      }
+   }
+   .mag-search {
+      background-image: url("../images/search-icon.png");
+   }
+   #block-apachesolr-panels-search-form {
+      width: 100%;
+      clear: both;
+      background: #fff;
+      input.form-text {
+         width: 100%;
+         height: 40px;
+      }
+      input.form-submit {
+         width: 100%;
+         height: 40px;
+      }
+   }
+   ul.nice-menu-down {
+      li {
+         float: none;
+         display: block;
+         a {
+            border: none;
+            width: 100%;
+         }
+         &.last {
+            border-right: none;
+         }
+      }
+   }
+   #main-menu li.first a, #nice-menu-1 .menu-path-front a {
+      background: none;
+      text-indent: 0;
+      color: #fff;
+      &.active {
+            background : #006993;
+            border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+         }
+   }
+   #main {
+      input, button, select, textarea {
+         width: 100%;
+         min-height: 35px;
+      }
+      .form-type-checkbox, .form-type-radio, .webform-datepicker, .file-widget, .form-managed-file, .facetapi-facet-bundle {
+         input {
+            width: auto;
+            &.facetapi-checkbox {
+               min-height: auto;
+            }
+         }
+      }
+   }
+   @include breakpoint($break-medium) {
+      #header #site-name a {
+         background: url("../logo.png") no-repeat scroll left top transparent;
+         background-size: 300px;
+         width: 300px;
+         height: 86px;
+         display:block; 
+      }
+   }
+   @include breakpoint($break-mobile-medium-nav) {
+      ul.nice-menu-down {
+         li {
+            ul {
+               display: none !important;
+            }
+         }
+      }
+   }   
+   @include breakpoint($break-large) {
+     .mag-search, .nav-toggle {
+       display: none;
+     }
+     #block-apachesolr-panels-search-form, #site-slogan, #block-system-user-menu {
+        display:block;
+     }
+     #site-slogan {
+        width: auto;
+        text-align: right;
+        padding-left: 0 !important;
+     }
+      #header #site-name a {
+         background: url("../logo.png") no-repeat scroll left top transparent;
+         background-size: 300px;
+         width: 300px;
+         height: 86px;
+         display:block;
+      }
+      #block-apachesolr-panels-search-form {
+         width: auto;
+         clear: none;
+         float: right;
+         input.form-text {
+            width: 150px;
+            height: 30px;
+            &:focus {
+               width: 250px;
+            }
+         }
+         input.form-submit {
+            width: auto;
+            height: 30px;
+         }
+      }
+      ul.nice-menu-down {
+         li {
+            float: left;
+            display: inline-block;
+            a {
+               border-left: 2px solid #fff;
+               width: auto;
+            }
+            ul {
+               li {
+                  &.last {
+                     border-right: none;
+                  }
+               }
+            }
+            &.last {
+               border-right: 2px solid #fff;;
+            }
+         }
+      }
+      #main-menu li.first a, #nice-menu-1 .menu-path-front a {
+         border-left : none;
+         background : url("../images/home-nav-bk.png") no-repeat center center;
+         color : transparent;
+         //padding-left : 0;
+         //padding-right : 0;
+         text-indent: -9999px;
+         width: 60px;
+         &.active {
+            background : url("../images/home-nav-bk-hover.png") no-repeat center center transparent;
+         }
+         &:hover {
+            background : url("../images/home-nav-bk-hover.png") no-repeat center center transparent;
+         }
+      }
+      .views-slideshow-cycle-main-frame-row, #views_slideshow_cycle_teaser_section_homepage_promo_image-default {
+         position: inherit !important;
+         width: 100% !important;
+         height: 100% !important;
+         
+      }
+      #header #top-menu #block-menu-menu-deii-main-menu ul.menu {
+         text-align: center;
+         li {
+            //width: 20%;
+            float:left;
+            a {
+               padding-left: 0;
+               padding-right: 0;
+            }
+         }
+                  
+         /* one item */
+         li:first-child:nth-last-child(1) {
+                 width: 100%;
+         }
+         
+         /* two items */
+         li:first-child:nth-last-child(2),
+         li:first-child:nth-last-child(2) ~ li {
+                 width: 50%;
+         }
+         
+         /* three items */
+         li:first-child:nth-last-child(3),
+         li:first-child:nth-last-child(3) ~ li {
+                 width: 33.3333%;
+         }
+         
+         /* four items */
+         li:first-child:nth-last-child(4),
+         li:first-child:nth-last-child(4) ~ li {
+                 width: 25%;
+         }
+         
+         /* five items */
+         li:first-child:nth-last-child(5),
+         li:first-child:nth-last-child(5) ~ li {
+                 width: 20%;
+         }
+
+         /* six items */
+         li:first-child:nth-last-child(6),
+         li:first-child:nth-last-child(6) ~ li {
+                 width: 16.6666%;
+         }
+
+         /* seven items */
+         li:first-child:nth-last-child(7),
+         li:first-child:nth-last-child(7) ~ li {
+                 width: 14.2857143%;
+         }
+         
+         /* eight items */
+         li:first-child:nth-last-child(8),
+         li:first-child:nth-last-child(8) ~ li {
+                 width: 12.5%;
+         }         
+      }
+   }
+}
+.front {
+   @include breakpoint($break-medium) {
+      .pane-homepage-promo-image {
+         float: left;
+         width: 50% !important;
+      }
+      .pane-block-58, .pane-block-61 {
+         float: right;
+         width: 45%;
+      }
+      .pane-user-login, .pane-block-2 {
+         clear:both;
+      }
+   }
+}
+.twocol-grantees-map {
+   @include breakpoint($break-mobile-medium) {
+      .content {
+         h3 {
+            float:none !important;
+            margin-top:0 !important;
+            clear:both;
+         }
+      }
+   }
+}

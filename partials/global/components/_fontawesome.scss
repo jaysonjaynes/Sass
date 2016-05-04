@@ -1,0 +1,132 @@
+.social-media-icons {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 0 !important;
+    margin-left: 0;
+    white-space: nowrap;
+    //text-align: center;
+    
+    li {
+        list-style: none;
+        //display: inline-block;
+        border-right: none !important;
+        padding: 0 1px;
+        margin: 0;
+        text-align: left;
+        a {
+            text-decoration: none !important;
+        }
+        span.ext {
+                display: none !important;
+            }
+    }
+    
+        /*a {
+            color: $secondary-color;
+            &:hover {
+                color: $highlight-color-1;
+            }
+            .social-media-name {
+                color: $body-link;
+            }
+        }*/
+        span.ext, span.mailto {
+                display: none !important;
+            }
+
+    .social-media-name {
+       /* left: -9000px;
+        display: block;
+        position: absolute;*/
+       margin-left: 5px;
+       display: inline-block;
+    }
+}
+#footer {
+    .social-media-icons {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 0 !important;
+    margin-left: 0;
+    text-align: center;
+    
+    li {
+        list-style: none;
+        display: inline-block;
+        border-right: none !important;
+        padding: 0 1px;
+        margin: 0;
+        a {
+            color: $secondary-color;
+            &:hover {
+                color: $highlight-color-1;
+            }
+        }
+        span.ext {
+                display: none !important;
+            }
+    }
+    
+            a {
+            color: $secondary-color;
+            &:hover {
+                color: $highlight-color-1;
+            }
+        }
+        span.ext, span.mailto {
+                display: none !important;
+            }
+
+     .social-media-name {
+        left: -9000px;
+        display: block;
+        position: absolute;
+    }
+}
+}
+#block-block-47, #pane-block-49, #pane-block-48 {
+    float:right;
+    width: 260px;
+    h2 {
+        color:#FFFFFF;
+        float:left;
+        font-family: Helvetica, Arial, sans-serif;
+        font-size:14px;
+        font-weight:normal;
+        margin-right:10px;
+        padding-top: 5px;
+    }
+    .clearfix {
+        clear: none;
+        &:after {
+            clear: none;
+        }
+    }
+}
+//T1 follow box
+#pane-block-49,#pane-block-48 {
+    float: none;
+    width: auto;
+    border: 1px solid $border-color;
+    border-radius: $border-radius;
+    border-left: none;
+    border-right: none;
+    padding: 10px 5px;
+    h2 {
+        color: $primary-color;
+        margin-right: 5px;
+        font-size: 15px;
+    }
+    .social-media-icons li a:hover {
+        color: $primary-color;
+    }
+}
+.pane-grants-panel-pane-6, .pane-organizations-grantee-orgs-by-state {
+    span.ext {
+                display: none !important;
+            }
+            .views-field-field-grant-program, .views-field-title-1 {
+                text-align: center;
+                white-space:nowrap;
+            }
+}

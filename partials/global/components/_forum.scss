@@ -1,0 +1,199 @@
+.profile-box {
+    .pane-content {
+        background: #fff;
+        .views-field-picture {
+            float: left;
+            margin: 0 5px 5px 0;
+        }
+        h2 {
+            margin-left: 0;
+        }
+        .byline {
+            font-size: 12px;
+            a {
+                color: $body-font-color-light;
+                text-decoration: none;
+                &:hover {
+                    color: $primary-color;
+                }
+            }
+        }
+    }
+}
+.pane-notifications-ui-subscriptions {
+    .pane-content {
+        background: $highlight-color-3;
+    }
+}
+.content {
+    .user-picture {
+        margin-bottom: 25px;
+    }
+    .pane-term-field-forum-tax-moderator {
+        font-size: 13px;
+        color: $body-font-color-light;
+    }
+}
+.back-to-box {
+    .pane-content {
+        background: none;
+        border-radius: 0;
+        padding: 0;
+        border: none;
+        .view-content {
+            a {
+                background: $highlight-color-1;
+                display: block;
+                border-radius: $border-radius;
+                border: 1px solid $border-color;
+                padding: 10px;
+                font-size: 15px;
+                text-decoration: none;
+                &:before {
+                    //content:"\f04b      ";
+                    font-family: FontAwesome;
+                    content:"\f04a      ";
+                    //content:"\f0d9      ";
+                    //font-size: 18px;
+                }
+                &:hover {
+                    background: $secondary-color;
+                    color: #fff;
+                }
+            }
+        }
+    }
+    
+}
+.pane-advanced-forum-topic-list, .pane-forum-list, .pane-forum-list-panel-pane-2 {
+    .views-field-title {
+        vertical-align: middle;
+        padding-top: 10px;
+    }
+    h3 {
+        font-size: 16px;
+        display: inline;
+        a {
+            text-decoration: none;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+    p {
+        margin-bottom: 10px;
+        margin-top: 5px;
+    }
+}
+
+.forum-node-create-links, .forum-node-create-links-top {
+    width: auto;
+    float: none;
+    margin-top: 0;
+    padding-top: 0 !important;
+    display: none;
+    margin-bottom: 10px;
+}
+.forum-node-create-links-top {
+    display: block;
+}
+.forum-node-create-links .forum-add-node {
+    margin-right: 0;
+    float: none;
+}
+.comment {
+    .new {
+        
+    }
+    .user-picture {
+        margin-bottom: 10px
+    }
+}
+
+.profile-page-box {
+    .pane-content {
+        background: #fff;
+        .views-field-picture, .views-field-edit-node {
+            margin-bottom: 10px;
+            a {
+                position: relative;
+                display:block;
+                &:hover {
+                    &:before {
+                        content: "\f030  Change Profile Picture";
+                        font-family: FontAwesome, $main-font;
+                        font-size: 14px;
+                        width: 100%;
+                        padding: 10px 0 15px;
+                        position: absolute;
+                        //border-radius: 50px;
+                        background: $background-color-rollover;
+                        //height: 80px;
+                        //width: 80px;
+                        //line-height: 80px;
+                        bottom: 0;
+                        left: 0;
+                        //margin: -50px 0 0 -40px;
+                        z-index: 500;
+                        text-align: center;
+                        color: #fff;
+                        //opacity: .7;
+                        }   
+                }                
+            }
+        }
+        .social-media-icons a {
+            &:hover {
+                color: $background-color-rollover;
+            }
+        }
+    }
+}
+.forum-create-link-new-login, .forum-create-link-new {
+    margin-bottom: 5px !important;
+}
+.forum-create-link-new {
+    a {
+        display: block;
+        background: $highlight-color-1;
+        padding: 5px;
+        border-radius: $border-radius;
+        text-align: center;
+        text-decoration: none;
+        border: 1px solid $border-color;
+        &:hover {
+            background: $secondary-color;
+            color: #fff;
+        }
+    }
+}
+.node-type-forum, .page-comment-reply, .page-comment-edit {
+    #edit-field-forum-file-upload-und-0-upload {
+        border: 1px solid $border-color;
+        border-radius: $border-radius;
+        padding: 2px;
+    }
+    input#edit-submit {
+        width: 100%;
+        padding: 10px;
+        height: auto;
+    }
+}
+
+//removing text in the submit topic form
+.page-node-add-forum {
+    .field-type-taxonomy-term-reference {
+        display: none;
+    }
+}
+
+
+/* remove the menu items when launching
+.forum-tools, .feed-icon, .menu-4223, .menu-mlid-4223 {
+    display: none !important;
+}
+.page-node-6287, .page-node-6288, .page-taxonomy-term, .page-node-6289 {
+     .menu-mlid-4223 {
+        display: block !important;
+     }
+}*/

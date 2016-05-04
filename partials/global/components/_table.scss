@@ -1,0 +1,68 @@
+table {
+    margin-top: 0;
+    border: 1px solid $border-color;
+    border-right: none;
+    border-left: none;
+    tr {
+        background-color: #fff;
+        &.even {
+            background-color: $table-row-color;
+        }
+        &.odd {
+            background-color: #fff;
+        }
+        &:hover {
+            background-color: $table-highlight-color;
+        }
+        th, td {
+            font-size: 13px;
+            padding: 10px;
+            &.views-field-field-resource-published-date, &.views-field-field-resource-review-date {
+                width: 17%;
+                text-align: center;
+            }
+        }
+        th {
+            padding: 5px;
+            font-size: 14px;
+            background-color: $table-row-color;
+            &.active {
+                img {
+                    margin-left: 5px;
+                }
+            }
+            a {
+                text-decoration: none;
+            }
+        }
+        td {
+            
+            &.active {
+                background-color: $table-highlight-color;
+            }
+        }
+    }
+    caption {
+        text-align: left;
+        font-size: 16px;
+        margin-bottom: 5px;
+    }
+}
+.table {
+    border: none;
+    tr {
+        &:nth-child(odd) {
+            background-color: #eee;
+        }
+        th {
+            font-weight: 500;
+            font-size: 15px;
+            background-color: $secondary-color-2;
+            color: #fff;
+            border: 1px solid $border-color;
+        }
+        td {
+            border: 1px solid $border-color;
+        }
+    }
+}

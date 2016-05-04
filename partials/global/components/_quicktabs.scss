@@ -1,0 +1,90 @@
+// Based on quicktabs with Zen style
+.quicktabs-wrapper, .pane-quicktabs-external-organizations {
+  clear:both;
+}
+
+ul.quicktabs-tabs.quicktabs-style-zen {
+  height: auto;
+  background: none;
+  margin: 0 0 15px;
+  padding: 0;
+  //border-bottom: 1px solid $border-color;
+  float:left;
+  width: 100%;
+  li, li.active {
+    margin: 0;
+    padding: 0;
+    padding-right: 3px;
+    background: none;
+    width: 100%;
+    a {
+      color: $body-link;
+      &:before {
+        content: 'View ';
+      }
+      &.active {
+        background: none;      
+      }
+      font: inherit;
+      background: #eee !important;
+      display: block;
+      border: 1px solid $border-color;
+      //border-bottom: none;
+      border-radius: 5px;
+      padding-left: 10px;
+      padding-right: 10px;
+      font-size: 16px;
+      &:hover {
+        color: $body-link-hover;
+        border: 1px solid $border-color;
+      }
+    }
+  }
+  li.active {
+      a.active, a.active:hover {
+        color: $primary-color;
+        background-color: #fff !important;
+        padding-bottom: 1px;
+        margin-bottom: -1px;
+        &:before {
+          content: none;
+        }  
+      }
+  }
+}
+@include breakpoint($break-ml) {
+ul.quicktabs-tabs.quicktabs-style-zen {
+  border-bottom: 1px solid $border-color;
+  li, li.active {
+    width: auto;
+    a, a:hover {
+      &:before {
+        content: none;
+      }
+      &.active {
+    
+      }
+      border-bottom: none;
+      border-radius: 5px 5px 0 0;
+    }
+  }
+  li.active {
+      a.active, a.active:hover {
+
+      }
+  }
+}
+}
+.related-resources {
+  .quicktabs-tabs {
+    margin-bottom: 0 !important;
+  }
+  .quicktabs_main {
+    border: 1px solid $border-color;
+    border-top: none;
+    padding: 15px;
+    border-bottom-right-radius: $border-radius;
+    border-bottom-left-radius: $border-radius;
+  }
+}
+ 

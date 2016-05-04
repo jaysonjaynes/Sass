@@ -1,0 +1,9 @@
+.page-node-8055, .page-node-9080, .page-node-2125, .page-node-2130 {
+    .breadcrumb {
+        ol {
+            li:nth-child(2) {
+                display:none;
+            }
+        }
+    }
+}

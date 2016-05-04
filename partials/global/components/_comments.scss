@@ -1,0 +1,55 @@
+#edit-author--2, #edit-author--4 {
+    display: none;
+}
+.user-picture {
+    float: left;
+    margin: 0 10px 0 0;
+    //display:none;
+}
+.comment {
+    border-top: 1px solid #ccc;
+    margin-bottom: 20px;
+    .submitted {
+        font-size: 13px;
+        line-height: 1.4em;
+        color: $body-font-color-light;
+        .permalink {
+            display:none;
+        }
+    }
+    .permalink {
+        display:none;
+    }    
+    .links {
+        //border: 1px solid $border-color;
+        //padding: 5px 10px;
+        margin-top: 5px;
+        display: block;
+        font-size: 12px;
+        text-align: right;
+        float: right;
+        li {
+            padding-right: 5px;
+            &.last {
+                padding-right: 0;
+            }
+        }
+    }
+}
+.field-name-comment-body {
+    margin: 0 !important;
+    .form-item {
+        margin: 0;
+    }
+}
+.pane-node-comment-form, .pane-node-comments {
+    margin-bottom: 25px !important;
+    clear:both;
+}
+#edit-comment-body--2, #edit-notifications--2, #edit-field-forum-file-upload--2 {
+    margin-bottom: 25px;
+}
+#edit-field-forum-file-upload--2 {
+    border: 1px solid #ccc;
+    padding: 15px;
+}

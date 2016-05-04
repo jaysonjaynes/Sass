@@ -1,0 +1,252 @@
+// REWRITE ALL THIS!
+.zone-menu-wrapper {
+    background : url("../images/top-nav-bk.png") top center no-repeat #fff;
+}
+.site-name-slogan {
+    float : right;
+}
+.site-name-slogan h6 {
+    color : #006993;
+    padding : 20px 0 0 80px;
+    font-size : 17px;
+    font-weight : normal;
+    font-style : italic;
+    letter-spacing : .5px;
+}
+.site-name-slogan .site-blurb {
+    color : #E58E1A;
+}
+.branding-data {
+    height : 0;
+}
+#block-system-user-menu, #block-block-57 {
+    float : right;
+    font-size : 12px;
+    padding: 10px;
+    //clear: right;
+    //margin-bottom: 5px;
+    line-height: 1;
+    ul {
+        margin-bottom: 0;
+        margin-left: 0;
+        padding-left: 10px;
+    }
+}
+#block-system-user-menu .menu li, #block-block-57 .menu li {
+    display : inline;
+    border-right : 1px solid #ccc;
+}
+#block-system-user-menu .menu li.last, #block-block-57 .menu li.last {
+    display : inline;
+    border-right : none;
+}
+#block-system-user-menu .menu li.first, #block-block-57 .menu li.first {
+    &:before {
+        content:"\f007      ";
+        //content:"\f0a9      ";
+        //content:"\f0a4      ";
+        font-family: FontAwesome;
+        color: #E58E1A;
+        font-size: 20px;
+    }
+}
+#block-system-user-menu .menu li a, #block-block-57 .menu li a {
+    text-decoration : none;
+    //color: #fff;
+}
+#block-search-form,
+#block-apachesolr-panels-search-form {
+    float : right;
+    padding: 10px;
+    padding-left: 0;
+}
+input.form-submit {
+    background : #E58E1A;
+    color : #fff;
+    border : 1px solid #E58E1A;
+    -webkit-border-radius : 8px;
+    -moz-border-radius : 8px;
+    border-radius : 8px;
+    font-size : 15px;
+    font-weight : normal;
+    padding : 0 5px;
+    height : 25px;
+    margin-right : 0;
+}
+.form-item-apachesolr-panels-search-form input.form-text {
+    color : #666;
+    height : 25px;
+    background : url("../images/search-field-bk.gif") no-repeat scroll left center #fff;
+    font-size : 13px;
+    margin : 0 0 5px 0;
+    padding : 3px 0 0 25px;
+    width : 160px;
+    border-right: 1px solid $border-color;
+    border-bottom: 1px solid $border-color;
+}
+#apachesolr-panels-search-block .form-actions,
+.form-item-apachesolr-panels-search-form {
+    display : inline;
+}
+.pane-apachesolr-form h2 {
+    font-size : 18px;
+}
+.pane-apachesolr-form .pane-content {
+    border : 1px solid #ccc;
+    padding : 10px;
+    padding-bottom : 0;
+    -webkit-border-radius : 8px;
+    -moz-border-radius : 8px;
+    border-radius : 8px;
+    margin-bottom: 20px;
+    clear:both;
+}
+.pane-apachesolr-form .pane-content input.form-submit {
+    width : 100%;
+    -webkit-border-radius : 8px;
+    -moz-border-radius : 8px;
+    border-radius : 8px;
+}
+.pane-apachesolr-form .pane-content input.form-text {
+    width : 100%;
+    font-weight : normal !important;
+}
+/*old menu*/
+.navigation {
+    float : left;
+    padding-top : 2px;
+}
+ul#main-menu {
+    margin-left : 0;
+}
+#main-menu li {
+    margin : 0;
+    padding : 0;
+}
+#main-menu li a {
+    display : inline-block;
+    color : #fff;
+    border-right : 1px solid #fff;
+    padding : 4px 8px 5px;
+    text-decoration : none;
+    font-size : 13px;
+}
+#nice-menu-1 {
+    font-size : 15px;
+    letter-spacing : .1em;
+}
+#nice-menu-1 .menu-path-front a {
+    border-left : none;
+    background : url("../images/home-nav-bk.png") no-repeat center center;
+    color : transparent;
+    //padding-left : 0;
+    //padding-right : 0;
+    text-indent: -9999px;
+    width: 60px;
+}
+#nice-menu-1 .menu-path-front a:hover {
+    background : url("../images/home-nav-bk-hover.png") no-repeat center center #006993;
+}
+#main-menu li a:hover {
+    background-color : transparent;
+}
+#main-menu li.last a,
+ul.nice-menu li.last {
+    border-right : 1px solid #fff;
+}
+ul.nice-menu ul li.last {
+    border-right : none;
+}
+ul.nice-menu ul li.last a {
+    padding-bottom : 10px;
+}
+/******************************
+ Global CSS for ALL menu types
+******************************/
+#block-nice-menus-1,
+#block-nice-menus-2 {
+    float : left;
+    width: 100%;
+}
+ul.nice-menu,
+ul.nice-menu ul {
+    list-style : none;
+    padding : 0;
+    margin : 0;
+    border-top : none;
+    z-index: 100;
+}
+ul.nice-menu li {
+    border : none;
+    float : left; /* LTR */
+    background-color : transparent;
+    width: auto;
+}
+ul.nice-menu a {
+    padding : 8px 15px 10px;
+    border-left : 1px solid #fff;
+    color : #fff;
+    text-decoration : none;
+}
+ul.nice-menu a:hover {
+    background-color : #006993;
+}
+ul.nice-menu ul {
+    top : auto;
+    left : auto; /* LTR */
+    border : 0;
+    border-top : none;
+    margin-right : 0; /* LTR */
+    background-color : #006993;
+    padding-top : 0;
+    -moz-box-shadow : 3px 3px 3px #888;
+    -webkit-box-shadow : 3px 3px 3px #888;
+    box-shadow : 3px 3px 3px #888;
+}
+ul.nice-menu ul li {
+    width : 12.5em;
+}
+/******************************
+ HORIZONTAL (down) menus
+******************************/
+ul.nice-menu-down {
+    float : left; /* LTR */
+}
+ul.nice-menu-down li {
+    border-top : none;
+}
+ul.nice-menu-down li li {
+    border-top : 0;
+    background-color : #006993;
+}
+ul.nice-menu-down ul {
+    left : 0; /* LTR */
+}
+ul.nice-menu-down ul li {
+    clear : both;
+}
+ul.nice-menu-down li ul li ul {
+    left : 12.5em; /* LTR */
+    top : -1px;
+}
+ul.nice-menu-down li.menuparent {
+    background : none; /* LTR */
+}
+ul.nice-menu-down li.menuparent:hover, ul.nice-menu-down li.active-trail a {
+    background : #006993; /* LTR */
+}
+ul.nice-menu-down li li.menuparent {
+    background : #006993; /* LTR */
+}
+ul.nice-menu-down li li.menuparent:hover {
+    background : #006993; /* LTR */
+}
+#region-sidebar-second h2.block-title {
+    padding : 0;
+    margin : 0;
+}
+form#user-login-form {
+    background-color : #E7EFF7;
+    padding : 0;
+    margin : 0;
+}

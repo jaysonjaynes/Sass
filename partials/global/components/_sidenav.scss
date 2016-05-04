@@ -1,0 +1,180 @@
+.sidebar1 {
+    ul.menu, ul.nice-menu, ul.nice-menu-right {
+        border-top: 1px solid $border-color;
+        list-style: none;
+        margin-left: 0;
+        padding-left:0;
+        li {
+            list-style: none;
+            border: none;
+            border-bottom: 1px solid $border-color;
+            background: transparent;
+            a {
+                display: block;
+                color: $secondary-color-2;
+                text-decoration: none;
+                padding: 10px;
+                font-size: 15px;
+                &.active, &:hover {
+                    color: $highlight-color;
+                }
+            }
+            ul.menu {
+                padding: 0 10px 0 20px;
+                border-top: none;
+                li {
+                    border-bottom: none;
+                    a {
+                        padding: 0;
+                        padding-bottom: 10px;
+                    }
+                }
+            }
+        }
+    }
+    ul.nice-menu, ul.nice-menu-right {
+        width: 100%;
+        li {
+            width: 100%;
+        }
+    }
+}
+.page-user .sidebar1 {
+    .menu-mlid-767 a {
+        color: $highlight-color;
+    }
+}
+
+.sidebar1, .sidebar2 {
+    .scroll-list {
+        border: 1px solid $border-color;
+        padding: 10px;
+        padding-top: 15px;
+        height:500px;
+        overflow:auto;
+        overflow-x:hidden;    
+    }
+    .views-field-picture{
+        text-align: center;
+        img {
+            border: 1px solid $border-color;
+        }
+    }
+}
+
+.resource-browse, .related-box, .pane-menu-popular-shortcuts .menu-name-menu-popular-shortcuts {
+    background-color: $background-color-light;
+    margin-bottom: 0;
+    .views-field {
+        border-bottom: 1px solid $border-color;
+        padding: 10px;
+        margin-bottom: 0;
+        &:last-child {
+            border-bottom: 0;
+            margin-bottom: 0;
+        }
+    }
+    .field-content {
+        display: inline;
+        padding-left: 0;
+    }
+}
+.related-box, .views-field-mail, .views-field-field-org-website, .pane-menu-popular-shortcuts .menu-name-menu-popular-shortcuts {
+    padding: 10px;
+    border: 1px solid $border-color;
+    ul {
+        list-style: none;
+        padding-left: 0;
+        margin-bottom: 10px;
+    }
+}
+.pane-menu-popular-shortcuts .menu-name-menu-popular-shortcuts {
+    background: $highlight-color-2;
+    padding-bottom: 0;
+    ul {
+        margin-bottom: 0;
+        li {
+            margin-bottom: 10px;
+        }
+    }
+}
+.pane-notifications-ui-subscriptions {
+    border: 0;
+    padding: 0;
+    ul {
+        list-style: none !important;
+        padding: 10px;
+        border: 1px solid $border-color;
+        background-color: $highlight-color-2;
+    }
+}
+.field-name-og-group-ref {
+    padding: 10px;
+    border: 1px solid $border-color;
+    background-color: $highlight-color-1;
+}
+.content .field-name-og-group-ref {
+    padding: 0;
+    border: none;
+    background-color: transparent !important;
+    margin-bottom: 15px;
+    
+    .field-label {
+        font-weight: 500;
+    }
+}
+.field-name-field-group-add-a-thread {
+    p {
+        padding: 10px;
+        border: 1px solid $border-color;
+        background-color: $highlight-color-1;
+    }
+}
+.views-field-mail, .views-field-field-org-website  {
+    border: 0 hidden;
+}
+.views-field-field-org-website {
+    padding: 0;
+}
+.page-user {
+.views-field-mail, .views-field-field-org-website {
+    float: right;
+    margin: 0 0 20px 10px;
+    img {
+        display: block;
+        margin: 0 auto;
+    }
+    h3 {
+        margin-top: 15px;
+    }
+}
+}
+.page-user {
+    .item-lines {
+        ul {
+            float: left;
+            width: auto;
+            border-bottom: none;
+            width:460px;
+            li {
+                border-top: none;
+                &:last-child {
+                    border-bottom: none;
+                }
+            }
+        }
+    }
+}
+.pane-profile-panel-pane-3 {
+    .views-field-mail {
+        float: none;
+        margin: 0;
+        padding: 0;
+        margin-bottom: 1.5em;
+    }
+}
+.node-type-organization {
+    .views-field-field-org-website {
+        margin-bottom: 25px !important;
+    }
+}

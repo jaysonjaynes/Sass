@@ -1,0 +1,150 @@
+.page-node-add.page-node-add-survey-section-1, .page-node-add.page-node-add-survey-section-2, .page-node-add.page-node-add-survey-section-3, .page-node-edit.node-type-survey-section-1, .page-node-edit.node-type-survey-section-2, .page-node-edit.node-type-survey-section-3, .page-printmail, .page-ace-osa-report {
+    h1#page-title {
+        display:block;
+    }
+    h2 {
+        color: $primary-color;
+    }
+    h3 {
+        color : #E58E1A;
+    font-weight : normal;
+    font-size : 20px;
+    }
+    label {
+        font-family : "adelle", Georgia, serif;
+    letter-spacing : .5px;
+    margin-bottom : 5px;
+    color: $primary-color;
+    font-weight : normal;
+    font-size : 16px;
+    }
+    .form-radios {
+        label {
+        font-size: $font-size;
+        font-family: $main-font;
+        color: $body-font-color;
+        }
+    }
+    .form-checkboxes .form-item, .form-radios .form-item {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    
+    #page #main input {
+        min-height: 30px;
+    }
+}
+ .page-ace-osa-report  {
+    h2 {
+        color : #E58E1A;
+    }
+    h3 {
+        font-size : 18px;
+        color: $primary-color;
+    }
+ }
+.page-node-edit.node-type-survey-section-1, .page-node-edit.node-type-survey-section-2, .page-node-edit.node-type-survey-section-3, .page-node-delete {
+    .tabs {
+        display: none;
+    }
+    #edit-actions {
+        input {
+            width: 48% !important;
+            &#edit-delete {
+                background: $primary-color;
+                border: $primary-color;
+                &:hover {
+                    background: $background-color-rollover;
+                    border: $background-color-rollover;
+                }
+            }
+        }
+    }
+}
+.page-printmail {
+    #print-mail-form {
+        input {
+            width: 48% !important;
+            &#edit-btn-cancel {
+                background: $primary-color;
+                border: $primary-color;
+                &:hover {
+                    background: $background-color-rollover;
+                    border: $background-color-rollover;
+                }
+            }
+            &#edit-btn-cancel {
+                margin-left: 2%;
+            }
+        }
+        label.printmail-label {
+            float: none;
+            width: auto;
+        }
+        textarea#edit-txt-to-addrs  {
+            width: 100%;
+        }
+    }
+}
+.print-pdf-links {
+    border: 1px solid $border-color;
+    border-radius: $border-radius;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+.new-survey a, .report-survey, .complete-survey {
+        background: white;
+        display: block;
+        border-radius: $border-radius;
+        border: 1px solid $border-color;
+        padding: 10px;
+        font-size: 15px;
+        text-decoration: none;
+        color: $body-link;
+        min-height: 70px;
+        .fa {
+            display: block;
+            float: left;
+            margin-right: 10px;
+            color: $secondary-color;
+        }
+        .survey-edit, .ace-home {
+            display: block;
+            text-align: right;
+            font-size: 12px;
+            clear: both;
+        }
+}
+.complete-survey {
+    .fa {
+        color: $tertiary-color;
+    }
+}
+.report-survey a {
+    .fa {
+        color: inherit;
+        
+    }
+}
+.page-ace-osa-report {
+    .print-pdf-links {
+        a {
+            text-decoration: none;
+            .print-pdf-links-text {
+                display: none;
+            }
+        }
+    }
+    h1 {
+        color: $primary-color;
+    }
+        .views-row {
+        border-top: 1px solid $border-color;
+        margin-bottom: 25px;
+        padding-top: 15px;
+        &:first-child {
+            border-top: none;
+            padding-top: 0;
+        }
+    }
+}

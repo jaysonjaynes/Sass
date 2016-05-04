@@ -1,0 +1,18 @@
+/* fixes issues with nice menus and responsive menus */
+.js .nav-collapse {
+    overflow: visible !important;
+}
+/* fixes issues with bullet showing up in list items */
+.item-list {
+    ul {
+        list-style: none;
+    }
+}
+.front {
+    .related-resources {
+        .pane-block-2 .pane-content {
+            padding: 0;
+            border: none;
+        }
+    }
+}

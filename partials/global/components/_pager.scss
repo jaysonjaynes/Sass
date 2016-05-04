@@ -1,0 +1,39 @@
+.pager {
+    list-style: none;
+    
+    margin-left: 0;
+    li {
+        display: inline-block;
+        margin: 0;
+        //margin-left: -3px;
+        a {
+            display: block;
+            padding: 8px;
+            border: 1px solid $border-color;
+        }
+        &.pager-previous {
+            a {
+                border-top-left-radius: $border-radius;
+                border-bottom-left-radius: $border-radius;
+            }
+            
+        }
+        &.pager-current {
+            padding: 8px;
+        }
+        &.pager-ellipsis {
+            text-align: center;
+            border: none;
+        }
+        &.pager-last, &.pager-first {
+            display: none;
+            
+        }
+        &.pager-next {
+            a {
+                border-top-right-radius: $border-radius;
+                border-bottom-right-radius: $border-radius;
+            }
+        }
+    }
+}

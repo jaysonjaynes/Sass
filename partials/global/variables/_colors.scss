@@ -1,0 +1,55 @@
+// Global use
+$primary-color:  #00537f;
+$secondary-color: #eca020;
+$secondary-color-2: #033649;
+$tertiary-color: #5e9732;
+$tertiary-color-2: #006993;
+$highlight-color: $secondary-color;
+$highlight-color-4: #ea4626;
+$hightlight-color-5: #37d9e7;
+$border-color: #ccc;
+$border-radius:5px;
+$body-font-color: #333;
+$body-font-color-light: #666;
+$background-color-light: #f8f8f8;
+$background-color-rollover: #599EBA;
+
+//yellow
+$highlight-color-1:#FDF5E8;
+//green   
+$highlight-color-2: #f2f7ef;
+//blue
+$highlight-color-3: #ebf3f7;	
+
+$signature-color: red;
+$call-to-action-color: $highlight-color;
+// Main Body related
+$body-background: $tertiary-color-2;
+$body-text: #333;
+$body-text-alt: $body-text;
+$body-link: $primary-color;
+$body-link-hover: $highlight-color;
+$body-link-active: $body-link-hover;
+
+// Page Elements
+$page-main-title: $primary-color;
+$page-headers: $primary-color;
+
+//banner menu
+$top-menu-color: $secondary-color-2;
+
+
+// Tables
+$table-row-color: $highlight-color-3;
+$table-highlight-color: $highlight-color-1;
+
+
+.highlight-color-1 {
+	background-color: $highlight-color-1 !important;
+}
+.highlight-color-2 {
+	background-color: $highlight-color-2 !important;
+}
+.highlight-color-3 {
+	background-color: $highlight-color-3 !important;
+}

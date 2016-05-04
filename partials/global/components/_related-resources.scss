@@ -1,0 +1,58 @@
+.rr-box-one {
+    .pane-content {
+        background: none;
+        border: 2px solid $tertiary-color;
+    }
+}
+.rr-box-two {
+        .pane-content {
+        background: none;
+        border: 2px solid $secondary-color;
+
+    }
+}
+.rr-box-three {
+        .pane-content {
+        background: none;
+        border: 2px solid $tertiary-color-2;
+
+    }
+}
+.pane-user-login {
+    .pane-content {
+        background: #E7EFF7;
+    }
+}
+#user-login-form {
+    input {
+        width: 100%;
+    }
+}
+.no-style {
+    .pane-content {
+        padding: 0;
+        background: none;
+        border: none;
+        border-radius: 0;
+    }
+}
+.no-color {
+    .pane-content {
+        background: none;
+    }
+}
+.no-style {
+    .pane-content {
+        background: none;
+        border:none;
+        padding: 0;
+    }
+}
+.scroll-box {
+    .pane-content {
+        height: 150px;
+        overflow-x: auto;
+        overflow-y: scroll;
+        overflow: auto;
+    }
+}

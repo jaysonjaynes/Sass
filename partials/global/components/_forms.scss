@@ -1,0 +1,50 @@
+.browse-select {
+    form {
+        width: 100%;
+        select {
+            width: 100%;
+            padding: 15px 10px 5px 10px;
+            option {
+                padding: 5px;
+            }
+        }
+    }
+}
+.views-exposed-form label {
+    font-weight: normal;
+}
+button, html input[type="button"], input[type="reset"], input[type="submit"] {
+    padding: 5px;
+    background-color: $primary-color;
+    border: none;
+    color: #fff;
+    &:hover {
+        background-color: $highlight-color;
+    }
+}
+.pane-user-login {
+    form {
+        border: 1px solid $border-color;
+        padding: 10px;
+        .form-item {
+            margin: 0 0 10px 0;
+            input {
+                width: 100%;
+            }
+        }
+        .item-list {
+            ul {
+                list-style: none;
+                padding-left: 0;
+            }
+        }
+    }
+}
+.browse-select {
+    margin-bottom: 25px;
+}
+.ctools-button, #views-display-top {
+    button, html input[type="button"], input[type="reset"], input[type="submit"] {
+        color: #333 !important;
+    }
+}

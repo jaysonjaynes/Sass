@@ -1,0 +1,203 @@
+.sidebar1, .sidebar2, .related-resources, .side-navigation {
+    .pane-calendar {
+        .pane-content {
+            padding: 0;
+            border: none;
+            background: transparent;
+        }
+        .date-nav {
+            margin-bottom: 0;
+            padding-bottom: 0;
+            h3 {
+                font-size: 20px;
+                border: 1px solid $border-color;
+                border-top-right-radius: $border-radius;
+                border-top-left-radius: $border-radius;
+                border-bottom: 0;
+                padding: 5px 0;
+                text-align: center !important;
+                a {
+                    text-decoration: none;
+                }
+            }
+            .pager {
+                display: none;
+            }
+        }
+        .calendar-calendar {
+            tr, tr.odd, tr.even {
+                th.days {
+                    background: $highlight-color-2;
+                }
+                td, td.empty {
+                    border: 1px solid $border-color;
+                    text-align:center; 
+                    vertical-align:middle;
+                    a {
+                        font-weight: 600;
+                        font-size: 1.1em;
+                    }
+                    &.today {
+                        background: $highlight-color-2;
+                        font-weight: 500;
+                    }
+                    &.has-events {
+                        color: $primary-color;
+                    }
+                }
+            }
+        }
+    }
+    .event-list {
+        border-top: none;
+        margin-top: -20px;
+    }
+}
+.content {
+    .view-calendar {
+        .date-nav-wrapper {
+            margin-top: 0;
+            .date-nav {
+                padding: 0;
+                margin-bottom: 0;
+                .date-heading {
+                    h3 {
+                        text-align: left;
+                        font-size: 22px;
+                        color: $primary-color;
+                    }
+                }
+                .date-prev, .date-next {
+                    a {
+                        font-weight: normal;
+                    }
+                }
+            }
+            .pager {
+                position: static;
+                border: none;
+                .date-prev, .date-next {
+                    background-color: transparent;
+                }
+                li {
+                    border: none;
+                    a {
+                        background: $primary-color;
+                        color: #fff;
+                        padding: 4px 8px;
+                        display: inline-block;
+                        &:hover {
+                            background: $secondary-color;
+                        }
+                    }
+                }
+                .date-prev a {
+                    border-top-left-radius: $border-radius;
+                    border-bottom-left-radius: $border-radius;
+                    border-right: 3px solid #fff;
+                }
+                .date-next a {
+                    border-top-right-radius: $border-radius;
+                    border-bottom-right-radius: $border-radius;
+                }
+            }
+        }
+        .calendar-calendar {
+            .month-view {
+                table {
+                    tr {
+                        td {
+                            &.empty {
+                                color: #bbb;
+                            }
+                            &.today {
+                                background: $highlight-color-2;
+                                &.single-day {
+                                    border: none;
+                                }
+                                &.date-box {
+                                    border: none;
+                                }
+                            }
+                            div.calendar {
+                                font-size: 13px;
+                                a {
+                                    font-weight: normal;
+                                    font-size: normal;
+                                }
+                            }
+                            .view-item-calendar {
+                                .calendar {
+                                    background: #fff;
+                                    border: 1px solid $border-color;
+                                    padding: 0;
+                                    box-shadow: 2px 2px 3px #666;
+                                    line-height: 1.4;
+                                    .cutoff, .continues {
+                                        display:none;
+                                    }
+                                    .stripe {
+                                        height: 10px;
+                                    }
+                                    .contents {
+                                        padding: 5px;
+                                    }
+                                }
+                            }
+                            &.multi-day {
+                                .view-item-calendar {
+                                .calendar {
+                                    height: 3em;
+                                    .contents {
+                                        width: auto !important;
+                                        overflow: visible;
+                                    }
+                                }
+                            }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.pane-calendar-calendar-legend {
+    margin-top: 10px;
+    padding: 15px;
+    h2 {
+        font-size: 15px !important;
+    }
+    .legend {
+        width: 100%;
+        table {
+            &.calendar-legend {
+                thead {
+                    display:none;
+                }
+                tr {
+                    td {
+                        padding: 5px;
+                        &:last-child {
+                            width: 25%
+                        }
+                    }
+                    &.odd {
+                        background: #fff;
+                    }
+                }
+            }
+        }
+    }
+}
+.calendar-calendar td span.date-display-single, .calendar-calendar td span.date-display-start, .calendar-calendar td span.date-display-end, .calendar-calendar td span.date-display-separator {
+    font-weight: 500;
+}
+    .scroll-list {
+        border: 1px solid $border-color;
+        padding: 10px;
+        padding-top: 15px;
+        height:200px;
+        overflow:auto;
+        overflow-x:hidden;    
+    }
